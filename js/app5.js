@@ -1,6 +1,6 @@
 import * as THREE from 'https://unpkg.com/three/build/three.module.js';
 //cilindro
-function main3() {
+function main5() {
     const canvasWidth = window.innerWidth;
     const canvasHeight = window.innerHeight;
   
@@ -23,16 +23,12 @@ function main3() {
   
     const scene = new THREE.Scene();
   
-    const boxWidth = 1;
-    const boxHeight = 1;
-    const boxDepth = 1;
   
   
-  
-    const geometry = new THREE.ConeGeometry(0.5,1.5,8, 1,false, 0, 6.283185307179586);
+    const geometry = new THREE.TorusGeometry(0.5,0.2,27,69, 6.283185307179586, 0, 3,141592653589793);
     const material = new THREE.MeshPhongMaterial( {color: 0x44aa88} );
-    const cone = new THREE.Mesh( geometry, material );
-    scene.add( cone );
+    const torus = new THREE.Mesh( geometry, material );
+    scene.add( torus );
   
     const color = 0xffffff;
     const intensity = 1;
@@ -41,12 +37,12 @@ function main3() {
     scene.add(light);
   
   
-    cone.rotation.x = 35;
-    cone.rotation.y = 45;
+    torus.rotation.x = 35;
+    torus.rotation.y = 45;
     renderer.render(scene, camera);
   
   
   }
   
-  main3();
+  main5();
   
