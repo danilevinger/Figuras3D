@@ -6,22 +6,30 @@
   
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Figuras 3D</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link " href="cubo.html">Cubo <span class="sr-only"></span></a>
-            <a class="nav-item nav-link" href="cilindro.html">Cilindro</a>
-            <a class="nav-item nav-link " href="cono.html">Cono</a>
-            <a class="nav-item nav-link " href="esfera.html">Esfera</a>
-            <a class="nav-item nav-link active" href="toro.html">Toro</a>
-      
-          </div>
-        </div>
-      </nav>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Figuras 3D</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Seleccionar figura
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+              <li><a class="dropdown-item" href="cubo.html">Cubo</a></li>
+              <li><a class="dropdown-item" href="cilindro.html">Cilindro</a></li>
+              <li><a class="dropdown-item" href="cono.html">Cono</a></li>
+              <li><a class="dropdown-item" href="esfera.html">Esfera</a></li>
+              <li><a class="dropdown-item active" href="toro.html">Toro</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
   <script type="module" src="js/app5.js"></script>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
